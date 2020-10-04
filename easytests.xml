@@ -1,0 +1,15 @@
+<suite name="CheckEasyTests" verbose="1">
+    <test name="TestsTask1Part1">
+        <classes>
+            <class name="easy.pagefactory.tests.TestsTask1Part1">
+                <methods>
+                    <include name="switchToRussianVersionSite" />
+                    <include name="textContainsTheWordFish" />
+                    <include name="findLoremIpsumByDefault" />
+                    <include name="clickButtonGenerateLoremIpsum" />
+                    <include name="firstParagraphBeginsLoremIpsumDolorSitAmet" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
