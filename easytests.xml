@@ -1,4 +1,5 @@
 <suite name="CheckEasyTests" verbose="1">
+
     <test name="TestsTask1Part1">
         <classes>
             <class name="easy.pagefactory.tests.TestsTask1Part1">
@@ -12,6 +13,7 @@
             </class>
         </classes>
     </test>
+
     <test name="TestsTask2Part2">
         <classes>
             <class name="easy.pagefactory.tests.TestsTask2Part2">
@@ -29,4 +31,5 @@
             </class>
         </classes>
     </test>
+
 </suite>

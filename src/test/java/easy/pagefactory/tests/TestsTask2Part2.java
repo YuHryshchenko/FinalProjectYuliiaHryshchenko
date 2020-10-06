@@ -181,5 +181,4 @@ public class TestsTask2Part2 extends BaseTest {
         Assert.assertTrue(greaterTwo);
     }
 
-
 }
