@@ -1,4 +1,5 @@
 <suite name="CheckEasyTests" verbose="1">
+
     <test name="TestsTask1Part1">
         <classes>
             <class name="easy.pagefactory.tests.TestsTask1Part1">
@@ -12,4 +13,23 @@
             </class>
         </classes>
     </test>
+
+    <test name="TestsTask2Part2">
+        <classes>
+            <class name="easy.pagefactory.tests.TestsTask2Part2">
+                <methods>
+                    <include name="generateFindTenWords" />
+                    <include name="checkNegativeNullDefaultWords" />
+                    <include name="checkTenTwentyWords" />
+                    <include name="generateFindTenBytes" />
+                    <include name="checkNegativeNullDefaultBytes" />
+                    <include name="checkTenTwentyBytes" />
+                    <include name="firstParagraphNotContainsLoremIpsumDolorSitAmet" />
+                    <include name="numberParagraphsContainsLorem" />
+                    <include name="averageNumberParagraphsContainsLorem" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
 </suite>
