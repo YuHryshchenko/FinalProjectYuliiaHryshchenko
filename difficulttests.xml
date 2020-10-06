@@ -1,0 +1,11 @@
+<suite name="CheckDifficultTests" verbose="1">
+    <test name="Tests">
+        <classes>
+            <class name="tests.Tests">
+                <methods>
+                    <include name="searchResultsContainsSearchSymbols" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
