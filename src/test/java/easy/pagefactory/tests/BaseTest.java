@@ -1,9 +1,6 @@
 package easy.pagefactory.tests;
 
-import easy.pagefactory.pages.BasePage;
-import easy.pagefactory.pages.HomePage;
-import easy.pagefactory.pages.LoremIpsumPage;
-import easy.pagefactory.pages.RussianPage;
+import easy.pagefactory.pages.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
@@ -52,6 +49,7 @@ public class BaseTest {
     public LoremIpsumPage getLoremIpsumPage() {
         return new LoremIpsumPage(getDriver());
     }
+
 
 
 }

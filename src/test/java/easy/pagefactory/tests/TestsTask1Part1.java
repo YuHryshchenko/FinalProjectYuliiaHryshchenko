@@ -1,11 +1,7 @@
 package easy.pagefactory.tests;
 
-import easy.pagefactory.pages.HomePage;
-import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import java.util.concurrent.TimeUnit;
 
 public class TestsTask1Part1 extends BaseTest {
 
@@ -24,33 +20,33 @@ public class TestsTask1Part1 extends BaseTest {
     @Test(priority = 2)
     public void textContainsTheWordFish() {
         getHomePage().setClickToRussianVersionSite();
-        getBasePage().waitForElementVisibility(30, getRussionPage().openRussianText());
+        getBasePage().waitForElementVisibility(60, getRussionPage().openRussianText());
         Assert.assertTrue(getRussionPage().findtheRussianFirstParagraph().contains(SEARCH_RUSSIAN_WORD));
     }
 
     @Test(priority = 3)
     public void findLoremIpsumByDefault() {
         getHomePage().setClickToRussianVersionSite();
-        getBasePage().waitForElementVisibility(30, getRussionPage().openRussianText());
+        getBasePage().waitForElementVisibility(60, getRussionPage().openRussianText());
         getRussionPage().clickButtonGenerateLoremIpsum();
-        getBasePage().waitForElementVisibility(30, getLoremIpsumPage().generateLoremIpsum());
+        getBasePage().waitForElementVisibility(60, getLoremIpsumPage().generateLoremIpsum());
         String actualResult = getLoremIpsumPage().generateNewLoremIpsum();
         Assert.assertEquals(COMPARE_WORDS, actualResult, "Lorem Ipsum not generated");
     }
 
     @Test(priority = 4)
     public void clickButtonGenerateLoremIpsum() {
-        getHomePage().clickButtonGenerateLoremIpsumOnEnglishVersionSite();
-        getBasePage().waitForElementVisibility(30, getLoremIpsumPage().generateLoremIpsum());
+        getHomePage().clickButtonGenerateEng();
+        getBasePage().waitForElementVisibility(60, getLoremIpsumPage().generateLoremIpsum());
         String actualResult = getLoremIpsumPage().generateNewLoremIpsum();
         Assert.assertEquals(COMPARE_WORDS, actualResult, "Lorem Ipsum not generated");
     }
 
     @Test(priority = 5)
     public void firstParagraphBeginsLoremIpsumDolorSitAmet() {
-        getHomePage().clickButtonGenerateLoremIpsumOnEnglishVersionSite();
-        getBasePage().waitForElementVisibility(30, getLoremIpsumPage().generateLoremIpsum());
-        String elementString = getLoremIpsumPage().theFirstParagraph();
+        getHomePage().clickButtonGenerateEng();
+        getBasePage().waitForElementVisibility(60, getLoremIpsumPage().generateLoremIpsum());
+        String elementString = getLoremIpsumPage().theFirstParagraphs();
         int actualResult = elementString.indexOf(COMPARE_PHRASE);
         Assert.assertEquals(actualResult, 0);
     }
